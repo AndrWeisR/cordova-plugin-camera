@@ -77,7 +77,7 @@ public class FileHelper {
     @SuppressLint("NewApi")
     public static String getRealPathFromURI_API11_And_Above(final Context context, final Uri uri) {
            
-           LOG.i(LOG_TAG, uri);
+           LOG.i(LOG_TAG, uri.toString());
 
         final boolean isKitKat = Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
         // DocumentProvider
