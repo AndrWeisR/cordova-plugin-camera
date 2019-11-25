@@ -103,7 +103,7 @@ public class FileHelper {
                     }
                     try {
                         final Uri contentUri = ContentUris.withAppendedId(
-                                Uri.parse("content://downloads/public_downloads"), Long.valueOf(id));
+                                Uri.parse("content://downloads/all_downloads"), Long.valueOf(id));
 
                         return getDataColumn(context, contentUri, null, null);
                     } catch (NumberFormatException e) {
